@@ -21,22 +21,18 @@ messages_array = [
     }
 ]
 print("Sending request to Cerebras Cloud SDK...")
-print("API Key loaded:", os.environ.get("CEREBRAS_API_KEY") is not None)
-print("Model:", os.environ.get("CEREBRAS_MODEL"))
+# print("API Key loaded:", os.environ.get("CEREBRAS_API_KEY") is not None)
+# print("Model:", os.environ.get("CEREBRAS_MODEL"))
+# print("Base URL:",client.base_url)
 #api call
-from cerebras.cloud.sdk import NotFoundError
+#from cerebras.cloud.sdk import NotFoundError
 
-try:
-    chat_completion = client.chat.completions.create(
+chat_completion = client.chat.completions.create(
         model=os.environ.get("CEREBRAS_MODEL"),
         messages=messages_array,
-    )
-
-    print(chat_completion.choices[0].message.content)
-
-except NotFoundError as e:
-    print("Status:", e.status_code)
-    print("Response:", e.response.text)
+)
 #RAW API RESPONSE
-#print(chat_completion)
-print(chat_completion.choices[0].message.content)
+print(chat_completion)
+#print(chat_completion.choices[0].message.content)
+
+
