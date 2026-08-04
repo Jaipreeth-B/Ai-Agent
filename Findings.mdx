@@ -1,0 +1,61 @@
+.env
+A .venv is a directory that contains a Python virtual environment — 
+an isolated workspace with its own Python interpreter and dependencies.
+ It’s typically created using Python’s built‑in venv module and is used to avoid dependency conflicts between projects.
+
+When you create a .venv, Python copies or symlinks the interpreter into that folder, sets up a pyvenv.cfg configuration file,
+ and creates a dedicated site-packages directory for project‑specific packages. 
+ This ensures that pip install affects only that environment, not your global Python installation.
+A dotenv file is a simple text file used to store environment variables in key-value pairs,
+ typically for application configuration and sensitive data like API keys.
+  It allows developers to keep sensitive information separate from their code,
+   enhancing security and making it easier to manage different environments.
+
+API key: Your application's secret credential for accessing OpenAI.
+.env file: A local text file used to store secrets outside your source code.
+python-dotenv: Reads the .env file and loads its values into the program's environment.
+os.getenv(): Retrieves those values from the environment.
+.gitignore: Prevents your .env file from being committed to Git, keeping secrets out of your repository.
+==========================================================================================
+
+__init__ , instance variables etc
+
+Key Points:
+__init__ Method
+
+Acts as a constructor.
+Initializes instance variables (self.owner, self.balance).
+Includes input validation to prevent invalid object creation.
+Instance Variables
+
+Belong to each object separately.
+Accessed using self.variable_name.
+Instance Methods
+
+Operate on instance variables.
+Always have self as the first parameter.
+Error Handling
+
+Prevents negative balances or invalid deposits/withdrawals.
+
+========================================================================================
+
+JSON
+
+
+What is JSON?
+JSON stands for JavaScript Object Notation.
+It is a lightweight, text-based format for storing and exchanging data.
+It is:
+
+Human-readable (easy to read and write)
+Language-independent (supported by almost all programming languages)
+Structured using key–value pairs and arrays
+Why is JSON Required?
+JSON is widely used because:
+
+Data Exchange – It’s the standard format for APIs to send/receive data between client and server.
+Configuration Files – Many applications use JSON for settings (e.g., package.json in Node.js).
+Lightweight & Fast – Smaller and faster to parse compared to XML.
+Cross-Platform – Works with almost every programming language.
+============================================================================================================

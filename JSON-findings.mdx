@@ -1,0 +1,76 @@
+1. JSON Structure
+A JSON document is either:
+
+An Object → { ... }
+An Array → [ ... ]
+2. JSON Object
+Written inside { }
+Contains key–value pairs
+Keys:
+Must be strings in double quotes " "
+Cannot be numbers, booleans, or null
+Must be unique within the same object
+Values can be:
+String → "Hello"
+Number → 42 (integer or float)
+Boolean → true or false
+Null → null
+Object → { ... } (nested)
+Array → [ ... ]
+3. JSON Array
+Written inside [ ]
+Contains values separated by commas
+Values can be any valid JSON type (string, number, boolean, null, object, array)
+4. JSON Value Types
+Type	Example
+String	"Hello World"
+Number	123, 45.67
+Boolean	true, false
+Null	null
+Object	{ "key": "value" }
+Array	[1, 2, 3]
+5. Nested JSON Example
+Here’s a full, complex JSON showing all possibilities:
+
+Json
+
+Copy code
+{
+  "id": 101,
+  "name": "John Doe",
+  "isActive": true,
+  "email": "john.doe@example.com",
+  "age": 29,
+  "height": 5.9,
+  "hobbies": ["reading", "gaming", "traveling"],
+  "education": {
+    "degree": "B.Tech",
+    "year": 2020,
+    "grades": {
+      "math": 88,
+      "science": 92,
+      "english": 85
+    }
+  },
+  "projects": [
+    {
+      "title": "Inventory System",
+      "completed": true,
+      "technologies": ["JavaScript", "Node.js", "MongoDB"]
+    },
+    {
+      "title": "E-commerce Website",
+      "completed": false,
+      "technologies": ["React", "Express", "MySQL"]
+    }
+  ],
+  "spouse": null
+}
+6. JSON Rules Recap
+Keys must be strings in double quotes.
+Strings must be in double quotes (not single quotes).
+No trailing commas after the last element in an object or array.
+Numbers cannot have leading zeros (except 0 itself).
+Boolean values are lowercase (true, false).
+null is lowercase.
+Whitespace is ignored (you can format for readability).
