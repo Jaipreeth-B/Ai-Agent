@@ -10,7 +10,7 @@ client = Cerebras(
     #unnecessary as cerebras cloud sdk will automatically use the default base url if not provided
 )
 
-messages_array = [
+messages = [
     {
         "role": "system",
         "content": "You are a helpful assistant."
@@ -29,7 +29,7 @@ print("Sending request to Cerebras Cloud SDK...")
 
 chat_completion = client.chat.completions.create(
         model=os.environ.get("CEREBRAS_MODEL"),
-        messages=messages_array,
+        messages=messages,
 )
 #RAW API RESPONSE
 print(chat_completion)

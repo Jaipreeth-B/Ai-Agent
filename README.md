@@ -29,3 +29,28 @@ Readable Text
 
 In simple words , A token is the basic unit of text an LLM understands and generates. It is converted into a numeric ID before a
 the model processes it.
+
+
+For PHASE 2:
+
+Step 0: Requirements Analysis
+
+Phase 2 requirements:
+
+ConversationManager
+
+State:
+✓ system_prompt
+✓ messages
+✓ client
+✓ model
+
+Methods:
+✓ __init__()
+✓ add_user_message()
+✓ get_response()
+✓ chat()
+✓ clear()
+✓ get_history()
+
+Notice we have 4 pieces of state and 6 behaviors.
